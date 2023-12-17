@@ -4,7 +4,6 @@ import requests
 
 r=requests.get("https://api.covidtracking.com/v1/us/daily.json")
 data=json.loads(r.text)
-print(data)
 death=data[0]["death"]
 negative=data[0]["negative"]
 positive=data[0]["positive"]
